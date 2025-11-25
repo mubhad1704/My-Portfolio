@@ -88,7 +88,7 @@ function Home() {
             >
               Hello I'm <br />
               <span className="text-white font-bold text-5xl sm:text-5xl lg:text-6xl lg:whitespace-nowrap">
-                Mubaris hadeef
+                Mubaris Hadeef
               </span>
             </motion.h1>
             <motion.p
