@@ -86,7 +86,7 @@ function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              Hello I'm <br />
+              Hello, I'm <br />
               <span className="text-white font-bold text-5xl sm:text-5xl lg:text-6xl lg:whitespace-nowrap">
                 Mubaris Hadeef
               </span>
@@ -97,10 +97,7 @@ function Home() {
               animate={{ opacity: 2, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              I build clean, modern, and responsive web experiences that
-              prioritize speed, usability, and design. As I continue growing
-              into a MERN stack developer, my focus is on creating scalable
-              applications that feel as good as they look.
+             I build clean, modern, and responsive web experiences that prioritize speed, usability, and design. As I continue to grow as a MERN stack developer, my focus is on crafting scalable applications that feel as good as they look.
             </motion.p>
 
             <motion.div

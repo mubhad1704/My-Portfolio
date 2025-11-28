@@ -32,7 +32,6 @@ function OverlayMenu({ isOpen, onClose }) {
               "About",
               "Skills",
               "Projects",
-              "Experience",
               "Contact",
             ].map((item, index) => (
               <motion.li

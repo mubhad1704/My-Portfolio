@@ -89,7 +89,7 @@ function Navbar() {
         <div className="hidden lg:block">
           <a
             href="#contact"
-            className="bg-linear-to-r from-blue-400 to-blue-700 text-white px-5 py-2 rounded-full font-medium shadow-lg hover:opacity-90 transition-opacity duration-300"
+            className="bg-linear-to-r from-[#64bedf] via-[#008cbf] to-[#1b6dca] text-white px-5 py-2 rounded-full font-medium shadow-lg hover:opacity-90 transition-opacity duration-300"
           >
             Reach Out
           </a>
