@@ -1,10 +1,9 @@
 import React, { useMemo } from "react";
 import ParticlesBackground from "../components/ParticlesBackground";
-import { hover, motion, scale } from "framer-motion";
+import { animate, easeInOut, motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { filter, label } from "framer-motion/client";
-import { href } from "react-router-dom";
-import avator from '../assets/avator.png'
+import avator from "../assets/avator.png";
+import scroll from "../assets/scroll.png"
 
 const socials = [
   {
@@ -25,7 +24,19 @@ const glowVariants = {
     transition: { type: "spring", stiffness: 300, damping: 15 },
   },
   tap: { scale: 0.95, y: 0, transition: { duration: 0.08 } },
+
+  scrollAnimate:{
+    opacity:0,
+    y:10,
+    transition:{  
+      duration:2,
+      repeat:Infinity,
+      
+    }
+  }
 };
+
+
 
 function Home() {
   const roles = useMemo(
@@ -62,9 +73,9 @@ function Home() {
     >
       <ParticlesBackground />
       <div className="absolute inset-0">
-        <div className="absolute -top-32 -left-32 w-[70vw] sm:w-[z-500vw] md:w-[40vw] h-[70vw] sm:h-[50vw] md:h-[40vw] max-w-[500px] max-h-[500px] rounded-full bg-linear-to-r from-[#64bedf] via-[#008cbf] to-[#1b6dca] opacity-30 sm:opacity-20 md:opacity-10 blur-[100px] sm:blur-[130px] md:blur-[150px] animate-pulse"></div>
+        <div className="absolute -top-32 -left-32 w-[70vw] sm:w-[50vw] md:w-[40vw] h-[70vw] sm:h-[50vw] md:h-[40vw] max-w-[500px] max-h-[500px] rounded-full bg-linear-to-r from-[#64bedf] via-[#008cbf] to-[#1b6dca] opacity-30 sm:opacity-20 md:opacity-10 blur-[100px] sm:blur-[130px] md:blur-[150px] animate-pulse"></div>
 
-        <div className="absolute bottom-0 right-0 w-[70vw] sm:w-[z-500vw] md:w-[40vw] h-[70vw] sm:h-[50vw] md:h-[40vw] max-w-[500px] max-h-[500px] rounded-full bg-linear-to-r from-[#64bedf] via-[#008cbf] to-[#1b6dca] opacity-30 sm:opacity-20 md:opacity-10 blur-[100px] sm:blur-[130px] md:blur-[150px] animate-pulse delay-500"></div>
+        <div className="absolute bottom-0 right-0 w-[70vw] sm:w-[50vw] md:w-[40vw] h-[70vw] sm:h-[50vw] md:h-[40vw] max-w-[500px] max-h-[500px] rounded-full bg-linear-to-r from-[#64bedf] via-[#008cbf] to-[#1b6dca] opacity-30 sm:opacity-20 md:opacity-10 blur-[100px] sm:blur-[130px] md:blur-[150px] animate-pulse delay-500"></div>
       </div>
 
       <div className="relative z-10 h-full max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2">
@@ -97,7 +108,10 @@ function Home() {
               animate={{ opacity: 2, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-             I build clean, modern, and responsive web experiences that prioritize speed, usability, and design. As I continue to grow as a MERN stack developer, my focus is on crafting scalable applications that feel as good as they look.
+              I build clean, modern, and responsive web experiences that
+              prioritize speed, usability, and design. As I continue to grow as
+              a MERN stack developer, my focus is on crafting scalable
+              applications that feel as good as they look.
             </motion.p>
 
             <motion.div
@@ -107,7 +121,7 @@ function Home() {
               transition={{ delay: 0.8, duration: 0.8 }}
             >
               <a
-                href="projects"
+                href="#projects"
                 className="px-6 py-3 rounded-full font-medium text-xs md:text-base text-white bg-linear-to-r from-[#64bedf] via-[#008cbf] to-[#1b6dca] shadow-lg hover:scale-105 transition-all"
               >
                 View My Work
@@ -141,19 +155,26 @@ function Home() {
               ))}
             </div>
           </div>
+          <motion.div className="hidden lg:block mt-5">
+              <motion.img variants={glowVariants}  animate="scrollAnimate" src={scroll}  alt="" className="w-14"/>
+          </motion.div>
         </div>
 
-
-<div className="relative hidden lg:block">
-  <motion.img src={avator} alt="mubhad" className="absolute top-1/2 -translate-y-1/2 object-contain select-none pointer-events-none" style={{
-    right: "-30px",width:"min(45vw, 780px)", maxHeight:"90vh"
-  }}
-  initial={{opacity:0, y:40, scale:0.98}}
-  animate={{opacity:1, y:0, scale:1}}
-  transition={{delay:0.2, duration:0.8}}
-  />
-</div>
-
+        <div className="relative hidden lg:block">
+          <motion.img
+            src={avator}
+            alt="mubhad"
+            className="absolute top-1/2 -translate-y-1/2 object-contain select-none pointer-events-none"
+            style={{
+              right: "-30px",
+              width: "min(45vw, 780px)",
+              maxHeight: "90vh",
+            }}
+            initial={{ opacity: 0, y: 40, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+          />
+        </div>
       </div>
     </section>
   );

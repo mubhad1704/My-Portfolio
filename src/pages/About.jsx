@@ -5,7 +5,7 @@ import me2 from "../assets/me2.png";
 function About() {
   const glows = [
     "-top-10 -left-10 w-[360px] h-[360px] opacity-20 blur-[120px]",
-    "bottom-0 right-10 w-[420px] h-[420px] opacity-15 blur-[140px] delay-300",
+    "bottom-0 right-10 w-[420px] h-[420px] opacity-10 blur-[140px] delay-300",
     "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] opacity-10 blur-[100px]",
   ];
 
@@ -53,7 +53,7 @@ function About() {
 
           {/* Name + Title + Description */}
           <div className="max-w-xl space-y-3">
-            <h2 className="md:text-5xl sm:text-6xl sm:text-center md:text-start font-extrabold tracking-tight bg-clip-text text-transparent bg-linear-to-r from-[#64bedf] via-[#008cbf] to-[#1b6dca]">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl text-center md:text-left font-extrabold tracking-tight bg-clip-text text-transparent bg-linear-to-r from-[#64bedf] via-[#008cbf] to-[#1b6dca]">
               Mubaris Hadeef
             </h2>
 

@@ -1,6 +1,7 @@
 import "./App.css";
 import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
+import Parallax from "./components/Parallax";
 import ParticlesBackground from "./components/ParticlesBackground";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -14,7 +15,7 @@ import Skills from "./pages/Skills";
 function App() {
   return (
     <>
-      <div className="relative gradient text-white">
+      <div className="relative  bg-gray-900 text-white">
         <CustomCursor/>
         {/* <ParticlesBackground /> */}
 
@@ -22,6 +23,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Parallax/>
         <Projects />
         <Contact />
         <Footer />

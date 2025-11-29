@@ -47,7 +47,7 @@ const Skills = () => {
               transition={{ duration: 0.4, delay: i * 0.12 }}
               viewport={{ once: true }}
             >
-              <Tilt glareEnable={true} glareMaxOpacity={0.35} tiltMaxAngleX={20} tiltMaxAngleY={20}>
+              <Tilt glareEnable glareMaxOpacity={0.35} tiltMaxAngleX={20} tiltMaxAngleY={20}>
                 <div
                   className="relative group p-0.5 rounded-2xl bg-linear-to-br from-[#64bedf] via-[#008cbf] to-[#1b6dca] shadow-[0_0_30px_rgba(0,140,191,0.4)] transition-all duration-300 hover:shadow-[0_0_45px_rgba(0,140,191,0.8)]"
                 >
