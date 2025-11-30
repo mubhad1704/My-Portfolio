@@ -54,12 +54,12 @@ function Parallax() {
       </motion.div>
 
       {/* bottom.png */}
-      <motion.div className="absolute w-full h-full -bottom-32 z-10 bg-[url('bottom.png')] bg-cover bg-center bg-no-repeat"></motion.div>
+      <motion.div className="absolute w-full h-full -bottom-32 z-10 bg-[url('/bottom.png')] bg-cover bg-center bg-no-repeat"></motion.div>
 
       {/* stars.png */}
       <motion.div
         style={{ x: yBg }}
-        className="absolute w-full h-full z-3 bg-[url('stars.png')] bg-cover bg-center bg-no-repeat"
+        className="absolute w-full h-full z-3 bg-[url('/stars.png')] bg-cover bg-center bg-no-repeat"
       ></motion.div>
     </div>
   );
