@@ -26,12 +26,12 @@ const glowVariants = {
   tap: { scale: 0.95, y: 0, transition: { duration: 0.08 } },
 
   scrollAnimate:{
-    opacity:0,
-    y:10,
+    opacity:[0.3, 1, 0.3],
+    y:[0, 15, 0],
     transition:{  
       duration:2,
       repeat:Infinity,
-      
+      ease: "easeInOut"
     }
   }
 };

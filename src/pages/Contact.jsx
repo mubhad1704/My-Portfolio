@@ -146,7 +146,7 @@ function Contact() {
     )}
 
     <motion.button
-    className='bg-blue-600 hover:bg-blue-700 disabled:opacity-60 text-white  py-3 rounded-md font-semibold transition'
+    className='bg-linear-to-r from-[#64bedf] via-[#008cbf] to-[#1b6dca] hover:bg-blue-700 cursor-pointer disabled:opacity-60 text-white  py-3 rounded-md font-semibold transition'
     whileHover={{scale:1.05}}
     whileTap={{scale:0.95}}
     disabled={status==="sending"}

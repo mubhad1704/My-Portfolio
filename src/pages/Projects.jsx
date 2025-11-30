@@ -97,7 +97,7 @@ function Projects() {
   });
 
   return (
-    <section id="projects" ref={ref} className="relative w-full  bg-linear-to-br from-black via-[#131313] to-black">
+    <section  ref={ref} className="relative w-full  bg-linear-to-br from-black via-[#131313] to-black">
       {/* Progress Header */}
       <div className="sticky top-0 left-0 bg-black/30 backdrop-blur-sm py-6 text-center z-10">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-linear-to-r from-[#64bedf] via-[#008cbf] to-[#1b6dca] mt-5">
