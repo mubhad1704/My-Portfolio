@@ -83,8 +83,10 @@ import {
   FaReact,
   FaCss3Alt,
   FaBootstrap,
+  FaNode,
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiExpress, SiFastapi, SiMongodb } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 function Skills() {
   const skills = [
@@ -95,6 +97,10 @@ function Skills() {
     { icon: <FaCss3Alt />, name: "CSS3" },
     { icon: <FaBootstrap />, name: "Bootstrap" },
     { icon: <TbBrandFramerMotion />, name: "Framer Motion" },
+    { icon: <SiMongodb />, name: "MongoDB" },
+    { icon: <FaNode />, name: "Node.js" },
+    { icon: <SiExpress />, name: "Express" },
+    { icon: <SiFastapi />, name: "FastAPI" },
   ];
 
   const repeated = [...skills, ...skills, ...skills];

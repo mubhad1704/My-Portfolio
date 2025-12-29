@@ -11,13 +11,20 @@ const items = [
   },
   {
     id: 2,
+    img: "skillstack.png",
+    title: "SkillStack",
+    desc: "A full-stack skill tracking web application built using React and FastAPI, enabling users to manage skills, track progress, and organize learning with secure API integration.",
+    link: "https://skill-stack-sayone.vercel.app/",
+  },
+  {
+    id: 3,
     img: "weatherSnap.png",
     title: "Weather Snap",
     desc: "Weather Snap is a modern weather application that fetches live climate data using the OpenWeather API.",
     link: "https://weather-app-ten-nu-78.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     img: "gshock.png",
     title: "G-Shock Product",
     desc: "A modern product showcase website for the G-Shock DW-5600 watch with responsive UI.",
